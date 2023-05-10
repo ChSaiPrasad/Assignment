@@ -1,21 +1,21 @@
-GET http://localhost:3000/tweets/1/
+GET http://localhost:3000/api/v1/longest-duration-movies
 
 ###
-POST http://localhost:3000/register
+POST http://localhost:3000/api/v1/new-movie
 Content-Type: application/json
 
 {
-  "username": "adam_richard",
-  "password": "richard_567",
-  "name": "Adam Richard",
-  "gender": "male"
+  "tconst": "adam_richard",
+  "primaryTitle": "richard_567",
+  "runtimeMinutes": 122,
+  "genres": "male"
 }
 
 ###
-POST http://localhost:3000/login/
-Content-Type: application/json
+GET http://localhost:3000/api/v1/top-rated-movies
 
-{
-  "username":"JoeBiden",
-  "password":"biden@123"
-}
+###
+GET http://localhost:3000/api/v1/genre-movies-with-subtotals
+
+###
+POST http://localhost:3000/api/v1/update-runtime-minutes
